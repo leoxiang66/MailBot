@@ -3,8 +3,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
 
-requirements = [] # 这里填依赖包信息
-
+requirements = [] 
 setup(
     name="mailbot",
     version="1.0.1",
@@ -15,7 +14,6 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/leoxiang66/MailBot",
     packages=find_packages(),
-    # Single module也可以：
     # py_modules=['timedd']
     install_requires=requirements,
     classifiers=[
