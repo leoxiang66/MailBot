@@ -12,10 +12,7 @@ class Mailbot():
         gmail_user = self.gmail_user
         sent_from = self.gmail_user
         gmail_password = self.gmail_password
-        email_text = """
-
-#                 %s
-                """ % (msgBody)
+        email_text = msgBody
 
         msg = MIMEText(email_text,_charset= 'utf-8')
         msg["Subject"] = Header(subject, charset = 'utf-8')

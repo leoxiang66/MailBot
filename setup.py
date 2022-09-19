@@ -6,7 +6,7 @@ with open("README.md", "r") as readme_file:
 requirements = [] 
 setup(
     name="mailbot",
-    version="1.0.1",
+    version="1.0.2",
     author="Tao Xiang",
     author_email="tao.xiang@tum.de",
     description="A package of email robots",
