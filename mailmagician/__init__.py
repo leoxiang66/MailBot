@@ -1,3 +1,2 @@
-from mailmagician._mailbot import Mailbot as _api1
-
-Mailbot = _api1
+from mailmagician._mailbot import Mailbot 
+from ._smtp_server import print_smtp_server, SMTP_SERVER

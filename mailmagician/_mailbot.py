@@ -4,9 +4,10 @@ from email.header import Header
 
 
 class Mailbot():
-    def __init__(self,email_account:str, password:str):
+    def __init__(self,email_account:str, password:str, smtp_server:str ='smtp.126.com'):
         self.gmail_user = email_account
         self.gmail_password = password
+        self.smtp_server = smtp_server
 
     def send(self,sentTo,subject,msgBody):
         gmail_user = self.gmail_user
@@ -20,7 +21,7 @@ class Mailbot():
         msg["To"] = sentTo
 
         try:
-            server = smtplib.SMTP_SSL('smtp.126.com')
+            server = smtplib.SMTP_SSL(self.smtp_server)
             server.ehlo()
             server.login(gmail_user, gmail_password)
 
