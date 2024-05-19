@@ -18,6 +18,7 @@ class Mailbot():
         sent_from = self.gmail_user
         gmail_password = self.gmail_password
         email_text = msgBody
+        
 
         msg = MIMEMultipart()
         msg["Subject"] = Header(subject, charset='utf-8')
